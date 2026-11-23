@@ -6,14 +6,15 @@ A Claude Code mod for non-native English speakers. Every prompt you send gets a 
 English: 1 error · 1 nit   [Show]
 ```
 
-Click **Show** to see each sentence as a word diff. Removed words are red and struck through, and added words are green and underlined:
+Click **Show** to see each sentence as a word diff. Removed words are red and struck through, and added words are green and underlined.
 
-```
-[error] the colors in --the-- collapsed view --is-- ++are++ wrong
-    no article needed before "collapsed view"; "colors" is plural
-```
+In the desktop app:
 
-(`--word--` is drawn struck through in red, `++word++` underlined in green.)
+![Expanded feedback card in the Claude desktop app](assets/desktop.png)
+
+In the terminal:
+
+![Expanded feedback in the Claude Code terminal](assets/terminal.png)
 
 Issues come in three levels:
 
