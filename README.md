@@ -1,10 +1,6 @@
 # english-coach
 
-A Claude Code mod for non-native English speakers. Every prompt you send gets a quick grammar check, and the result shows as a small card under your message:
-
-```
-English: 1 error · 1 nit   [Show]
-```
+A Claude Code mod for non-native English speakers. Every prompt you send gets a quick grammar check, and the result shows as a small card under your message.
 
 Click **Show** to see each sentence as a word diff. Removed words are red and struck through, and added words are green and underlined.
 

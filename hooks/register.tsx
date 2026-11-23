@@ -16,6 +16,7 @@ const MAX_STORED = 50
 
 const COLOR: Record<Level, string> = { error: 'red', better: 'yellow', nit: 'gray' }
 const CARD_TINT = 'rgba(127, 127, 127, 0.12)'
+const CARD_INSET = '20%' // the card takes at most the other 80%, like a chat bubble
 
 // Prompts the person typed: the terminal ('composer'), the desktop app ('sdk')
 // and Remote Control ('bridge'). Task notifications and peer messages are skipped.
@@ -75,13 +76,15 @@ export const register: Register = on => {
         {message}
         <Box
           key="english-coach"
-          flexDirection="column"
-          alignItems={isRight ? 'flex-end' : 'flex-start'}
+          justifyContent={isRight ? 'flex-end' : 'flex-start'}
           marginTop="xs"
           marginBottom="lg"
         >
+          {/* Box has no maxWidth: a fixed spacer on the left caps the card's width. */}
+          {isRight ? <Box key="spacer" width={CARD_INSET} flexShrink={0} /> : null}
           <Box
             flexDirection="column"
+            flexShrink={1}
             paddingX="md"
             paddingY="sm"
             backgroundColor={isRight ? CARD_TINT : undefined}
