@@ -1,0 +1,10 @@
+{
+  "name": "english-coach",
+  "version": "0.1.0",
+  "description": "Checks the English of every prompt you send and shows a collapsible card under each message",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "k4ttitude"
+  }
+}

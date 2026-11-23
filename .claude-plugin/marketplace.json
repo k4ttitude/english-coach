@@ -1,0 +1,13 @@
+{
+  "name": "english-coach",
+  "owner": {
+    "name": "k4ttitude"
+  },
+  "plugins": [
+    {
+      "name": "english-coach",
+      "source": "./"
+    }
+  ],
+  "description": "english-coach: a Claude Code mod that checks the English of every prompt"
+}
